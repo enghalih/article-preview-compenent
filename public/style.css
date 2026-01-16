@@ -1,0 +1,257 @@
+.card-title {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: 0.025rem;
+}
+
+.card-date, .card-description {
+  font-size: 1.3rem;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.card-name {
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.share-text {
+  font-size: 1.3rem;
+  line-height: 140%;
+  letter-spacing: 25%;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Manrope", sans-serif;
+  border-color: #ecf2f8;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #ecf2f8;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+.card {
+  width: 90%;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 40px -10px 40px hsla(210, 29%, 84%, 0.5);
+  position: relative;
+}
+
+.card-title {
+  color: #48556a;
+}
+
+.card-description {
+  color: #6e8098;
+  margin-top: 2.4rem;
+}
+
+.card-date {
+  color: #9daec2;
+}
+
+.card-name {
+  color: #48556a;
+}
+
+.share-text {
+  color: #9daec2;
+}
+
+.image img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+
+.content {
+  width: 90%;
+  margin: 3.2rem auto 1.6rem;
+}
+
+.profile {
+  margin-top: 4.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.share-button {
+  position: relative;
+  width: 3.2rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  background-color: #ecf2f8;
+  display: grid;
+  place-items: center;
+  z-index: 100;
+}
+
+.share.active .share-button {
+  background-color: #6e8098;
+}
+
+.share.active .share-button img {
+  filter: grayscale(100%) brightness(3);
+}
+
+.share-menu {
+  display: none;
+}
+
+.share.active .share-menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #48556a;
+  padding: 1.8rem 3.8rem;
+  gap: 1.6rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 7.2rem;
+  border-radius: 0 0 10px 10px;
+}
+
+.share-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.card-avatar {
+  border-radius: 50%;
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+
+.profile-texts {
+  flex: 1;
+}
+
+@media (min-width: 37.5rem) {
+  .card {
+    display: flex;
+    width: 80%;
+  }
+  .image img {
+    border-radius: 10px 0 0 10px;
+    width: 23rem;
+    height: 100%;
+  }
+  .content {
+    margin: 4rem 3.2rem;
+  }
+  .profile {
+    margin-top: 2.4rem;
+  }
+  .share {
+    position: relative;
+  }
+  .share.active .share-menu {
+    bottom: 160%;
+    box-shadow: 0 10px 10px 0 hsla(210, 29%, 84%, 0.5);
+    transform: translateX(-50%);
+    width: max-content;
+    border-radius: 10px;
+  }
+  .share-menu::after {
+    content: "";
+    width: 2.4rem;
+    aspect-ratio: 1/1;
+    background-color: #48556a;
+    border-radius: 1px;
+    position: absolute;
+    z-index: -100;
+    top: 100%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+  }
+}
+@media (min-width: 62rem) {
+  .content {
+    margin: 3.2rem 4rem;
+  }
+  .card {
+    max-width: 73rem;
+  }
+  .image img {
+    width: 29rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
