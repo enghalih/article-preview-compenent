@@ -35,7 +35,7 @@ The goal of this challenge is to recreate the design as closely as possible whil
 
 ### Screenshot
 
-![Article Preview Component](./preview.jpg)
+![Article Preview Component](./preview.png)
 
 ---
 
