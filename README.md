@@ -13,7 +13,8 @@ Frontend Mentor challenges help developers improve their frontend skills by buil
   - Links  
 - My process  
   - Built with  
-  - What I learned  
+  - What I learned
+  - Time Estimation
   - Continued development  
   - Useful resources  
 - Author  
@@ -66,6 +67,13 @@ Working on this project helped me strengthen my understanding of core frontend c
 I also improved my debugging skills by inspecting pseudo-elements in browser developer tools, understanding why they sometimes do not appear, and identifying common causes such as missing content, incorrect positioning, or stacking context issues.
 
 Additionally, this project reinforced the importance of using valid CSS color formats and following best practices to avoid silent styling errors.
+
+---
+
+### Time Estimation for this project
+
+time estimation: 4 hours
+time spended: 3 hours 20 minutes
 
 ---
 
